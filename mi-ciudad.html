@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#231f1e">
+  <title>Mi ciudad | Mi primera página con estilos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container-fluid px-4 py-2">
+    <div class="d-flex flex-column flex-md-row gap-3">
+      <nav class="site-nav d-flex flex-row flex-wrap flex-md-column flex-md-nowrap gap-2" aria-label="Navegación principal">
+        <a class="site-nav-link" href="index.html">Pagina principal</a>
+        <a class="site-nav-link" href="meditaciones.html">Meditaciones</a>
+        <a class="site-nav-link" href="mi-ciudad.html" aria-current="page">Mi ciudad</a>
+        <a class="site-nav-link" href="enlaces.html">Enlaces</a>
+        <a class="site-nav-link" href="portafolio.html">Portafolio</a>
+      </nav>
+
+      <main class="page-content flex-grow-1">
+        <h1>Mi ciudad</h1>
+        <p>Cada ciudad tiene lugares, historias y personas que la hacen especial. Esta página es un espacio para compartir lo que más me gusta de la mía.</p>
+
+        <div class="row g-3 page-sections">
+          <section class="col-12 col-lg-6" aria-labelledby="lugares">
+            <div class="page-card h-100">
+              <h2 id="lugares">Lugares para descubrir</h2>
+              <p>Un parque, una plaza o una calle favorita pueden contar mucho sobre la vida de una ciudad.</p>
+            </div>
+          </section>
+          <section class="col-12 col-lg-6" aria-labelledby="vida-local">
+            <div class="page-card h-100">
+              <h2 id="vida-local">Lo que la hace única</h2>
+              <p>La comida, las tradiciones y las actividades de la comunidad forman parte de la identidad local.</p>
+            </div>
+          </section>
+        </div>
+
+        <footer class="page-footer">
+          <p><em>Creada el <time datetime="2026-10-29">29 de octubre de 2026</time></em></p>
+          <p>por mí misma.</p>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

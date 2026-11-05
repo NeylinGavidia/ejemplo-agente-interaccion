@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#231f1e">
+  <title>Portafolio | Mi primera página con estilos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+  <script src="js/portafolio.js" defer></script>
+</head>
+<body>
+  <div class="container-fluid px-4 py-2">
+    <div class="d-flex flex-column flex-md-row gap-3">
+      <nav class="site-nav d-flex flex-row flex-wrap flex-md-column flex-md-nowrap gap-2" aria-label="Navegación principal">
+        <a class="site-nav-link" href="index.html">Pagina principal</a>
+        <a class="site-nav-link" href="meditaciones.html">Meditaciones</a>
+        <a class="site-nav-link" href="mi-ciudad.html">Mi ciudad</a>
+        <a class="site-nav-link" href="enlaces.html">Enlaces</a>
+        <a class="site-nav-link" href="portafolio.html" aria-current="page">Portafolio</a>
+      </nav>
+
+      <main class="page-content flex-grow-1">
+        <h1>Portafolio: Cajamarca turística</h1>
+        <p>Un recorrido visual por algunos lugares emblemáticos de Cajamarca.</p>
+
+        <div class="carousel-toolbar">
+          <p id="carousel-help" class="mb-0">Usa las flechas o los indicadores para cambiar de lugar.</p>
+          <button class="btn btn-outline-light btn-sm" type="button" data-carousel-toggle aria-pressed="false">
+            Pausar carrusel
+          </button>
+        </div>
+
+        <div id="tourismCarousel" class="carousel slide tourism-carousel" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover" role="region" aria-label="Lugares turísticos de Cajamarca" aria-roledescription="carrusel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#tourismCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Mostrar Baños del Inca"></button>
+            <button type="button" data-bs-target="#tourismCarousel" data-bs-slide-to="1" aria-label="Mostrar Cumbemayo"></button>
+            <button type="button" data-bs-target="#tourismCarousel" data-bs-slide-to="2" aria-label="Mostrar Ventanillas de Otuzco"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <article class="carousel-item active" role="group" aria-roledescription="diapositiva" aria-label="1 de 3">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Ba%C3%B1os_del_Inca-6_Cajamarca.JPG"
+                class="d-block w-100 tourism-image"
+                alt="Piscinas termales de Baños del Inca en Cajamarca"
+                fetchpriority="high">
+              <div class="carousel-caption">
+                <h2>Baños del Inca</h2>
+                <p>Complejo de aguas termales en el distrito de Baños del Inca, conocido por sus pozas y piscinas de agua caliente.</p>
+                <small>Foto: Catatine · <a href="https://commons.wikimedia.org/wiki/File:Ba%C3%B1os_del_Inca-6_Cajamarca.JPG" target="_blank" rel="noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></small>
+              </div>
+            </article>
+
+            <article class="carousel-item" role="group" aria-roledescription="diapositiva" aria-label="2 de 3">
+              <img
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bosc_de_Pedres_de_Cumbe_Mayo_02.jpg/1280px-Bosc_de_Pedres_de_Cumbe_Mayo_02.jpg"
+                class="d-block w-100 tourism-image"
+                alt="Formaciones rocosas del bosque de piedras de Cumbemayo"
+                loading="lazy">
+              <div class="carousel-caption">
+                <h2>Cumbemayo</h2>
+                <p>Un paisaje de formaciones rocosas junto a un antiguo canal de piedra, parte de un importante conjunto arqueológico.</p>
+                <small>Foto: Pitxiquin · <a href="https://commons.wikimedia.org/wiki/File:Bosc_de_Pedres_de_Cumbe_Mayo_02.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></small>
+              </div>
+            </article>
+
+            <article class="carousel-item" role="group" aria-roledescription="diapositiva" aria-label="3 de 3">
+              <img
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Ventanillas_de_OTUZCO_-_Cajamarca.jpg/1280px-Ventanillas_de_OTUZCO_-_Cajamarca.jpg"
+                class="d-block w-100 tourism-image"
+                alt="Nichos funerarios tallados en roca en las Ventanillas de Otuzco"
+                loading="lazy">
+              <div class="carousel-caption">
+                <h2>Ventanillas de Otuzco</h2>
+                <p>Antigua necrópolis de Cajamarca, con nichos funerarios excavados en la roca que recuerdan la forma de pequeñas ventanas.</p>
+                <small>Foto: Jherson Maximiliano · <a href="https://commons.wikimedia.org/wiki/File:Ventanillas_de_OTUZCO_-_Cajamarca.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></small>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#tourismCarousel" data-bs-slide="prev" aria-describedby="carousel-help">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Lugar anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#tourismCarousel" data-bs-slide="next" aria-describedby="carousel-help">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Lugar siguiente</span>
+          </button>
+        </div>
+
+        <footer class="page-footer">
+          <p><em>Creada el <time datetime="2026-10-29">29 de octubre de 2026</time></em></p>
+          <p>por mí misma.</p>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
